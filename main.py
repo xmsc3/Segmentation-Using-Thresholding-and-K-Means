@@ -35,6 +35,12 @@ def main():
         manual_T = 127
         print("Invalid input. Defaulting to 127.")
 
+    # PHASE 1.5: GEOMETRIC TRANSFORMATIONS
+    print("--- Phase 1.5: Creating Geometric Octagon Figure ---")
+    
+    octagon_img = create_geometric_figure(img)
+    save_single_image(octagon_img, output_dir, '01b_geometric_octagon.png', "Geometric Octagon Figure")
+    
     # PHASE 2: BASIC SEGMENTATION METHODS
     print("--- Phase 2: Basic Segmentation Methods ---")
 
